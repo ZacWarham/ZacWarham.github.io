@@ -12,6 +12,8 @@ params:
     github: "UBC-MDS"
     twitter: "UBCMDS"
 
+permalinks:
+  posts: "/:contentbasename/"
 
 caches:
   images:
