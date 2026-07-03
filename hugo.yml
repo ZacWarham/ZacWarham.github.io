@@ -5,6 +5,7 @@ theme: "beautifulhugo"
 
 params:
   subtitle: "Master of Data Science at the University of British Columbia"
+  favicon: "favicon.ico"
   author:
     email: "info-mds@science.ubc.ca"
     facebook: ubcmasterofdatascience
