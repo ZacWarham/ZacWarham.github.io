@@ -1,7 +1,0 @@
-baseURL = 'https://ZacWarham.github.io/'
-locale = 'en-us'
-title = 'Sample GitHub Site'
-theme = 'beautifulhugo'
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'

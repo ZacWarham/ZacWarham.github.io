@@ -1,0 +1,10 @@
+<style>
+  /* Desktop hover-open dropdowns; keep tap/click behavior on touch/mobile. */
+  @media (min-width: 768px) and (hover: hover) and (pointer: fine) {
+    .navbar-custom .navbar-nav .dropdown:hover > .dropdown-menu,
+    .navbar-custom .navbar-nav .dropdown:focus-within > .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+  }
+</style>

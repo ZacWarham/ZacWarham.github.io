@@ -1,0 +1,119 @@
+baseURL: "https://ZacWarham.github.io/"
+locale: "en-us"
+title: "UBC MDS"
+theme: "beautifulhugo"
+
+caches:
+  images:
+    dir: ":cacheDir/images"
+
+menu:
+  main:
+    # Top-level: Program
+    - name: Program
+      identifier: program
+      weight: 1
+
+    - name: About
+      identifier: program-about
+      url: /about/
+      parent: program
+      weight: 1
+
+    - name: Our vision
+      url: /vision/
+      parent: program
+      weight: 2
+
+    - name: Our team
+      url: /team/
+      parent: program
+      weight: 3
+
+    - name: At a glance
+      url: /img/schedule.pdf
+      parent: program
+      weight: 4
+
+    - name: Course Descriptions
+      url: /descriptions/
+      parent: program
+      weight: 5
+
+    - name: Course Materials
+      url: https://github.com/UBC-MDS/public
+      parent: program
+      weight: 6
+
+    - name: Event Calendar
+      url: /event-calendar/
+      parent: program
+      weight: 7
+
+    - name: Calendar
+      url: /calendar/
+      parent: program
+      weight: 8
+
+    - name: Policies and Regulations
+      url: /policies/
+      parent: program
+      weight: 9
+
+    - name: Jobs
+      url: /jobs/
+      parent: program
+      weight: 10
+
+
+    # Top-level: Capstone
+    - name: Capstone
+      identifier: capstone
+      weight: 2
+
+    - name: About
+      identifier: capstone-about
+      url: /capstone/about/
+      parent: capstone
+      weight: 1
+
+    - name: Partner info
+      url: /capstone/partner_info/
+      parent: capstone
+      weight: 2
+
+    - name: Student info
+      url: /capstone/student_info/
+      parent: capstone
+      weight: 3
+
+    - name: Proposals
+      url: /capstone/proposal/
+      parent: capstone
+      weight: 4
+
+    - name: Timeline
+      url: /capstone/timeline/
+      parent: capstone
+      weight: 5
+
+    - name: Legal
+      url: /capstone/guide-to-mutual-nda-ip/
+      parent: capstone
+      weight: 6
+
+    - name: Past projects
+      url: /capstone/past_projects/
+      parent: capstone
+      weight: 7
+
+
+    # Top-level: Resources
+    - name: Resources
+      url: /resources/
+      weight: 3
+
+    # Top-level external link
+    - name: Official website
+      url: http://masterdatascience.ubc.ca/
+      weight: 4
