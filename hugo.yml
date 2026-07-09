@@ -13,6 +13,7 @@ params:
     twitter: "UBCMDS"
 
 permalinks:
+  # Required to maintain backwards compatibility with published links
   posts: "/:contentbasename/"
   img: "/:contentbasename/"
 
@@ -134,3 +135,6 @@ menu:
 markup:
   highlight:
     noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
