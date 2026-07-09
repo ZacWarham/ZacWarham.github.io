@@ -14,6 +14,7 @@ params:
 
 permalinks:
   posts: "/:contentbasename/"
+  img: "/:contentbasename/"
 
 caches:
   images:
@@ -129,3 +130,7 @@ menu:
     - name: Official website
       url: http://masterdatascience.ubc.ca/
       weight: 4
+
+markup:
+  highlight:
+    noClasses: false
