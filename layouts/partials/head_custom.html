@@ -1,10 +1,35 @@
+<!--
+The following code is to convert the onclick to onhover for the menu drop downs
+-->
 <style>
-  /* Desktop hover-open dropdowns; keep tap/click behavior on touch/mobile. */
-  @media (min-width: 768px) and (hover: hover) and (pointer: fine) {
-    .navbar-custom .navbar-nav .dropdown:hover > .dropdown-menu,
-    .navbar-custom .navbar-nav .dropdown:focus-within > .dropdown-menu {
-      display: block;
-      margin-top: 0;
-    }
+  /* Desktop only */
+@media (min-width: 768px) {
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
   }
+
+  .navbar .dropdown-menu {
+    margin-top: 0;
+  }
+}
 </style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth >= 768) {
+    document.querySelectorAll(".navbar .dropdown").forEach(function(dropdown) {
+      dropdown.addEventListener("mouseenter", function() {
+        this.classList.add("open", "show");
+        const menu = this.querySelector(".dropdown-menu");
+        if (menu) menu.classList.add("show");
+      });
+
+      dropdown.addEventListener("mouseleave", function() {
+        this.classList.remove("open", "show");
+        const menu = this.querySelector(".dropdown-menu");
+        if (menu) menu.classList.remove("show");
+      });
+    });
+  }
+});
+</script>
+<!---->
